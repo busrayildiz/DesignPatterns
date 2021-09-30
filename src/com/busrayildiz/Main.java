@@ -1,9 +1,6 @@
 package com.busrayildiz;
 
-import com.busrayildiz.designpatterns.singleton.EagerInitializationSingleton;
-import com.busrayildiz.designpatterns.singleton.LazySingleton;
-import com.busrayildiz.designpatterns.singleton.StaticBlockSingleton;
-import com.busrayildiz.designpatterns.singleton.ThreadSafeSingleton;
+import com.busrayildiz.designpatterns.singleton.*;
 
 public class Main {
 
@@ -13,5 +10,6 @@ public class Main {
     StaticBlockSingleton.getStaticBlockSingleton().singletonTest();
     LazySingleton.getLazySingleton().singletonTest();
     ThreadSafeSingleton.getThreadSafeSingleton().singletonTest();
+    BillPughSingleton.getInstance().singletonTest();
     }
 }
