@@ -2,7 +2,7 @@ package com.busrayildiz.designpatterns.singleton;
 
 public class LazySingleton {
 
-    public static LazySingleton lazySingleton;
+    private static LazySingleton lazySingleton;
 
     private LazySingleton(){
 
