@@ -1,0 +1,20 @@
+package com.busrayildiz.designpatterns.singleton;
+
+//this approach is not thread-safe
+public class EagerInitializationSingleton {
+
+    private static final EagerInitializationSingleton INSTANCE = new EagerInitializationSingleton();
+
+    private  EagerInitializationSingleton() {
+    }
+
+
+
+    public static EagerInitializationSingleton  getInstance(){
+        return INSTANCE;
+    }
+
+    public void singletonTest(){
+        System.out.println("Eager singleton method has runned");
+    }
+}
