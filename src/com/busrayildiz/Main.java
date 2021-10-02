@@ -11,5 +11,6 @@ public class Main {
     LazySingleton.getLazySingleton().singletonTest();
     ThreadSafeSingleton.getThreadSafeSingleton().singletonTest();
     BillPughSingleton.getInstance().singletonTest();
+
     }
 }
